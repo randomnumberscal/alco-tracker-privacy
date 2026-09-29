@@ -2,333 +2,503 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Alco Tracker Privacy Policy</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="Privacy Policy for Alco Tracker"
+  />
+
+  <title>Alco Tracker — Privacy Policy</title>
 
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f6f7f9;
-      color: #202124;
-      line-height: 1.65;
+      padding: 0;
+    }
+
+    body {
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+
+      background: #f6f7fb;
+      color: #1f2937;
+      line-height: 1.7;
     }
 
     .container {
-      max-width: 850px;
+      width: min(900px, calc(100% - 32px));
       margin: 0 auto;
-      padding: 40px 20px 70px;
+      padding: 40px 0 70px;
     }
 
-    .card {
+    .hero {
       background: #ffffff;
-      border-radius: 20px;
-      padding: 32px;
-      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.07);
+      border: 1px solid #e5e7eb;
+      border-radius: 28px;
+      padding: 34px;
+      margin-bottom: 18px;
+      text-align: center;
+      box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.04);
+    }
+
+    .logo {
+      font-size: 54px;
+      margin-bottom: 8px;
     }
 
     h1 {
-      margin-top: 0;
-      margin-bottom: 8px;
       font-size: 32px;
+      line-height: 1.2;
+      margin-bottom: 8px;
+      color: #111827;
     }
 
     .updated {
-      color: #777;
+      color: #2563eb;
       font-size: 14px;
-      margin-bottom: 28px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .intro {
+      color: #6b7280;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .section {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 22px;
+      padding: 24px;
+      margin-bottom: 14px;
+      box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.025);
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      background: #eef2ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 21px;
+      flex-shrink: 0;
     }
 
     h2 {
-      margin-top: 30px;
       font-size: 20px;
+      line-height: 1.3;
+      color: #111827;
     }
 
     p {
-      margin: 10px 0;
-    }
-
-    ul {
-      padding-left: 24px;
-    }
-
-    .contact {
-      margin-top: 30px;
-      padding: 18px;
-      border-radius: 14px;
-      background: #f2f3f5;
-    }
-
-    .footer {
-      margin-top: 30px;
-      text-align: center;
-      color: #777;
-      font-size: 13px;
+      color: #4b5563;
     }
 
     a {
-      color: #3367d6;
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 28px;
+      color: #9ca3af;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        width: min(100% - 20px, 900px);
+        padding-top: 20px;
+      }
+
+      .hero {
+        padding: 26px 18px;
+        border-radius: 22px;
+      }
+
+      .section {
+        padding: 20px;
+        border-radius: 18px;
+      }
+
+      h1 {
+        font-size: 27px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
+  <main class="container">
 
-    <div class="card">
+    <section class="hero">
+      <div class="logo">🛡️</div>
 
-      <h1>Privacy Policy</h1>
+      <h1>Alco Tracker Privacy Policy</h1>
 
       <div class="updated">
-        Last updated: September 27, 2026
+        Last updated: September 29, 2026
+      </div>
+
+      <p class="intro">
+        Alco Tracker respects your privacy.
+        This Privacy Policy explains how information
+        is stored and processed when you use the
+        Alco Tracker mobile application.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <div class="section-title">
+        <div class="icon">📱</div>
+        <h2>1. Data stored on your device</h2>
       </div>
 
       <p>
-        Alco Tracker respects your privacy. This Privacy Policy explains
-        how the application collects, uses, stores, and shares information.
+        Alcohol records, drink amounts, notes,
+        personal goals, streak information,
+        reminder settings, language preferences,
+        theme preferences and other application
+        settings are primarily stored locally on
+        your device.
       </p>
 
-      <h2>1. Information Stored on Your Device</h2>
+      <br />
 
       <p>
-        Alco Tracker allows users to record information such as dates,
-        alcoholic drink types, amounts consumed, personal notes, goals,
-        streaks, achievements, reminder settings, themes, and language
-        preferences.
+        Alco Tracker does not require you to create
+        an account to use these features.
       </p>
+    </section>
 
-      <p>
-        This information is primarily stored locally on the user's device.
-        Alco Tracker does not require a user account to use its core
-        tracking features.
-      </p>
 
-      <h2>2. Advertising</h2>
-
-      <p>
-        The free version of Alco Tracker may display advertisements using
-        Google AdMob.
-      </p>
-
-      <p>
-        Google AdMob may collect or process information including:
-      </p>
-
-      <ul>
-        <li>advertising identifiers;</li>
-        <li>device information;</li>
-        <li>IP address;</li>
-        <li>approximate location derived from network information;</li>
-        <li>advertising interaction information;</li>
-        <li>diagnostic information.</li>
-      </ul>
-
-      <p>
-        Premium users may use Alco Tracker without advertisements.
-      </p>
-
-      <h2>3. Premium Subscriptions and Purchases</h2>
-
-      <p>
-        Alco Tracker uses RevenueCat to manage Premium subscriptions and
-        access to Premium features.
-      </p>
-
-      <p>
-        RevenueCat may process information including:
-      </p>
-
-      <ul>
-        <li>anonymous application user identifiers;</li>
-        <li>subscription status;</li>
-        <li>purchased product identifiers;</li>
-        <li>transaction information;</li>
-        <li>device and application information.</li>
-      </ul>
-
-      <p>
-        Alco Tracker does not directly collect or store payment card
-        information. Payments for the Android version are processed through
-        Google Play.
-      </p>
-
-      <h2>4. Notifications</h2>
-
-      <p>
-        Alco Tracker may use notifications to provide reminders selected
-        by the user.
-      </p>
-
-      <p>
-        Notification permissions are requested through the device
-        operating system and may be disabled by the user.
-      </p>
-
-      <h2>5. Data Export</h2>
-
-      <p>
-        Premium users may export locally stored Alco Tracker data to a
-        file.
-      </p>
-
-      <p>
-        Exported files are created only at the user's request. The user
-        chooses where the file is saved or which third-party application
-        receives it.
-      </p>
-
-      <h2>6. Data Sharing</h2>
-
-      <p>
-        Alco Tracker does not sell users' personal information.
-      </p>
-
-      <p>
-        Certain information may be processed by third-party services used
-        by the application, including:
-      </p>
-
-      <ul>
-        <li>Google AdMob — advertising;</li>
-        <li>Google Play — application distribution, subscriptions, and payments;</li>
-        <li>RevenueCat — subscription and entitlement management.</li>
-      </ul>
-
-      <h2>7. Data Retention</h2>
-
-      <p>
-        Information entered directly into Alco Tracker is generally stored
-        locally on the user's device until the user deletes records, clears
-        application data, or uninstalls the application.
-      </p>
-
-      <p>
-        Information processed by third-party services may be retained
-        according to those providers' own policies.
-      </p>
-
-      <h2>8. Data Deletion</h2>
-
-      <p>
-        Alco Tracker currently does not require users to create an account.
-      </p>
-
-      <p>
-        Users may remove locally stored information by:
-      </p>
-
-      <ul>
-        <li>deleting records inside the application;</li>
-        <li>clearing Alco Tracker application data through Android settings;</li>
-        <li>uninstalling the application.</li>
-      </ul>
-
-      <h2>9. Security</h2>
-
-      <p>
-        Reasonable technical measures are used to protect information
-        handled by the application.
-      </p>
-
-      <p>
-        However, no method of electronic storage or transmission can be
-        guaranteed to be completely secure.
-      </p>
-
-      <h2>10. Children and Age Requirements</h2>
-
-      <p>
-        Alco Tracker is not designed for children.
-      </p>
-
-      <p>
-        The application relates to tracking alcohol consumption and is
-        intended only for users who are legally permitted to consume
-        alcohol under the laws applicable in their country or region.
-      </p>
-
-      <p>
-        Alco Tracker does not encourage alcohol consumption.
-      </p>
-
-      <h2>11. International Users</h2>
-
-      <p>
-        Privacy and data protection rights may vary depending on the user's
-        country or region.
-      </p>
-
-      <p>
-        Users may have additional rights under applicable privacy
-        legislation.
-      </p>
-
-      <h2>12. Refunds and Subscriptions</h2>
-
-      <p>
-        Premium subscriptions purchased through Google Play are subject
-        to Google Play subscription, cancellation, and refund policies.
-      </p>
-
-      <p>
-        Cancelling a subscription does not necessarily result in a refund.
-        Users may manage subscriptions or request eligible refunds through
-        Google Play.
-      </p>
-
-      <h2>13. Changes to This Privacy Policy</h2>
-
-      <p>
-        This Privacy Policy may be updated when the application, its
-        features, third-party services, or applicable legal requirements
-        change.
-      </p>
-
-      <p>
-        The "Last updated" date will be changed when significant updates
-        are made.
-      </p>
-
-      <h2>14. Contact</h2>
-
-      <p>
-        For privacy questions, data requests, or concerns regarding Alco
-        Tracker, contact the developer.
-      </p>
-
-      <div class="contact">
-
-        <p>
-          <strong>Developer:</strong>
-          arturjanixxx
-        </p>
-
-        <p>
-          <strong>Email:</strong>
-          <a href="mailto:turkaloartur3@gmail.com">
-            turkaloartur3@gmail.com
-          </a>
-        </p>
-
-        <p>
-          <strong>Application:</strong>
-          Alco Tracker
-        </p>
-
-        <p>
-          <strong>Android package:</strong>
-          com.arturgta.alcotracker
-        </p>
-
+    <section class="section">
+      <div class="section-title">
+        <div class="icon">📢</div>
+        <h2>2. Advertising — Google AdMob</h2>
       </div>
 
-      <div class="footer">
-        © 2026 Alco Tracker
+      <p>
+        The free version of Alco Tracker may display
+        advertisements using Google AdMob and the
+        Google Mobile Ads SDK.
+      </p>
+
+      <br />
+
+      <p>
+        Google may process information such as your
+        IP address, interactions with advertisements
+        and the application, diagnostic information,
+        and device or account identifiers for
+        advertising, analytics, security and fraud
+        prevention purposes.
+      </p>
+
+      <br />
+
+      <p>
+        Advertising identifiers may also be used
+        depending on your device settings, consent
+        choices and applicable law.
+      </p>
+
+      <br />
+
+      <p>
+        Premium users do not see advertisements
+        inside Alco Tracker.
+      </p>
+
+      <br />
+
+      <p>
+        More information is available in the
+        <a
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Google Privacy Policy
+        </a>.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <div class="section-title">
+        <div class="icon">👑</div>
+        <h2>3. Premium subscriptions — RevenueCat</h2>
       </div>
 
+      <p>
+        Alco Tracker uses RevenueCat to manage and
+        verify Premium subscription status.
+      </p>
+
+      <br />
+
+      <p>
+        RevenueCat may process technical device
+        information and transaction information
+        related to your subscription, including
+        purchase information and Google Play
+        purchase tokens.
+      </p>
+
+      <br />
+
+      <p>
+        Alco Tracker uses this information to
+        determine whether Premium features should
+        be active for the user.
+      </p>
+
+      <br />
+
+      <p>
+        More information is available in the
+        <a
+          href="https://www.revenuecat.com/privacy/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          RevenueCat Privacy Policy
+        </a>.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <div class="section-title">
+        <div class="icon">💳</div>
+        <h2>4. Payments — Google Play</h2>
+      </div>
+
+      <p>
+        Subscriptions and purchases are processed
+        through Google Play.
+      </p>
+
+      <br />
+
+      <p>
+        Alco Tracker does not receive or store your
+        complete bank card or payment card details.
+      </p>
+
+      <br />
+
+      <p>
+        Google Play may process payment, billing,
+        purchase and subscription information
+        according to Google's policies.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <div class="section-title">
+        <div class="icon">🔔</div>
+        <h2>5. Notifications and reminders</h2>
+      </div>
+
+      <p>
+        If you enable reminders, Alco Tracker may
+        request permission from your device to send
+        notifications.
+      </p>
+
+      <br />
+
+      <p>
+        Reminder settings and custom reminder text
+        are stored locally on your device.
+      </p>
+
+      <br />
+
+      <p>
+        You can disable notifications at any time
+        through Alco Tracker or your Android device
+        settings.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <div class="section-title">
+        <div class="icon">📤</div>
+        <h2>6. Data export</h2>
+      </div>
+
+      <p>
+        Alco Tracker includes an optional data export
+        feature.
+      </p>
+
+      <br />
+
+      <p>
+        When you choose to export your information,
+        the application creates a file containing
+        selected locally stored Alco Tracker data.
+      </p>
+
+      <br />
+
+      <p>
+        Exporting, saving or sharing the file occurs
+        only after you initiate the action and choose
+        where the file should be saved or shared.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <div class="section-title">
+        <div class="icon">🔐</div>
+        <h2>7. Security</h2>
+      </div>
+
+      <p>
+        Alco Tracker uses security features provided
+        by the operating system and third-party
+        services that use secure network connections
+        where applicable.
+      </p>
+
+      <br />
+
+      <p>
+        However, no electronic storage or data
+        transmission method can be guaranteed to be
+        completely secure.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <div class="section-title">
+        <div class="icon">🗑️</div>
+        <h2>8. Data retention and deletion</h2>
+      </div>
+
+      <p>
+        Data stored locally by Alco Tracker generally
+        remains on your device until you delete
+        individual records, clear the application's
+        data, or uninstall the application.
+      </p>
+
+      <br />
+
+      <p>
+        Information processed by Google AdMob,
+        Google Play or RevenueCat may be retained
+        according to the privacy policies, retention
+        practices and legal obligations of those
+        services.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <div class="section-title">
+        <div class="icon">🔞</div>
+        <h2>9. Children</h2>
+      </div>
+
+      <p>
+        Alco Tracker is intended for adults and is
+        not designed for children.
+      </p>
+
+      <br />
+
+      <p>
+        Alco Tracker does not intentionally request
+        personal information from children.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <div class="section-title">
+        <div class="icon">✉️</div>
+        <h2>10. Privacy questions</h2>
+      </div>
+
+      <p>
+        If you have questions, concerns or requests
+        regarding privacy or this Privacy Policy,
+        please use the developer contact information
+        provided on the official Alco Tracker
+        Google Play listing.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <div class="section-title">
+        <div class="icon">📝</div>
+        <h2>11. Changes to this Privacy Policy</h2>
+      </div>
+
+      <p>
+        This Privacy Policy may be updated when
+        Alco Tracker features, third-party services,
+        technologies or legal requirements change.
+      </p>
+
+      <br />
+
+      <p>
+        When this policy is updated, the
+        "Last updated" date at the top of this page
+        will also be changed.
+      </p>
+    </section>
+
+
+    <div class="footer">
+      Alco Tracker • Privacy Policy • 2026
     </div>
 
-  </div>
+  </main>
 </body>
 </html>
