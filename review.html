@@ -1,9 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Alco Tracker — Google Play Review Access</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Alco Tracker Review Access</title>
+
   <style>
     body {
       margin: 0;
@@ -11,71 +13,81 @@
       background: #f5f7fb;
       color: #111827;
       min-height: 100vh;
-      display: grid;
-      place-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 24px;
       box-sizing: border-box;
     }
+
     .card {
-      width: min(560px, 100%);
+      width: 100%;
+      max-width: 520px;
       background: white;
-      border: 1px solid #e5e7eb;
       border-radius: 24px;
       padding: 28px;
       box-sizing: border-box;
       text-align: center;
-      box-shadow: 0 12px 40px rgba(0,0,0,.08);
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
     }
-    h1 { margin: 0 0 12px; font-size: 28px; }
-    p { line-height: 1.55; color: #4b5563; }
+
+    h1 {
+      margin-top: 0;
+      font-size: 28px;
+    }
+
+    p {
+      color: #4b5563;
+      line-height: 1.6;
+    }
+
     .button {
       display: inline-block;
-      margin: 14px 0 20px;
-      padding: 14px 20px;
+      margin-top: 20px;
+      padding: 15px 22px;
       background: #2563eb;
       color: white;
       text-decoration: none;
       border-radius: 14px;
-      font-weight: 700;
+      font-weight: bold;
     }
-    img {
-      width: min(320px, 90%);
-      height: auto;
-      margin-top: 8px;
-    }
-    code {
-      display: block;
-      margin-top: 14px;
+
+    .code {
+      margin-top: 22px;
       padding: 12px;
       background: #f3f4f6;
       border-radius: 10px;
-      overflow-wrap: anywhere;
-      color: #111827;
+      word-break: break-all;
+      font-family: monospace;
+      font-size: 13px;
     }
-    .small { font-size: 13px; }
   </style>
 </head>
+
 <body>
-  <main class="card">
+  <div class="card">
     <h1>Alco Tracker</h1>
-    <p><strong>Google Play Review Access</strong></p>
+
     <p>
-      This page provides Google Play reviewers with free access to all Premium
-      functionality for app review. No purchase or free trial is required.
+      Google Play Review Access
     </p>
 
-    <a class="button" href="alcotracker://review?code=ALCO-GP-REVIEW-7K4M9Q2X6P8N">
+    <p>
+      This page provides Google Play reviewers with access
+      to all Premium features without requiring a purchase
+      or free trial.
+    </p>
+
+    <a
+      class="button"
+      href="alcotracker://review?code=ALCO-GP-REVIEW-7K4M9Q2X6P8N"
+    >
       Open Alco Tracker Review Access
     </a>
 
-    <p class="small">
-      If the button cannot be used, scan the QR code below on the device
-      where Alco Tracker is installed.
-    </p>
-
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADBklEQVR4nO2cy43bMBCGv4kE+EgBKWBLkTtISUFKSgdiKelAPBqQ8edAUuKuTxtv/JCHB8Oi+cEceDAvDm3i0yN++zwDDjnkkEMOOeTQPiEroy+z0cyI1kO0HjumuuB4l+05dEMISRKjJGnuBGGpc3MnoMsfNOumB5fJoa+A0moAUl9fwskYdTIAGgvyLDI59CVQsQxQ1AKw43/5JoceEuo/PCu+nUxwNgjCSN8F6V7bc+jmUNWIIJofPh5B0UBxwATQVrIeXCaHroFKFFlGV+LJi5e6wCPL3UPZRjQGIL4t2XXkyDKP8L7W/eAyOXQNdJl9rnOEhWoeOmmqH7iNeAko9dgxnCy7iTiAppyCLjDqZHYMkh3vtD2HbgYVrxEHTNE6kXON1C9GmLFonQw6QbLqXR5cJoeugdb6JDlsZNSCpqDsJuooXsMjy9eBwoKmZAbpoHYuSCXGDGtO8iQyOfQvUM010gDxh7AmnkwHMc7nXnDGCHfYnkM3h0r6oBm2bIJRC9kojFqomYjnGi8ExbeFnFcA6New1qVSD3EoS+x4n+05dPsqdjoop6AAgnNPHGaAbiH+OPfAweOIF4CqI8hlhwVNlK6Imn+UsGJrknCvsWuoCRyyMuT8klq9nIC2i8Y1Yu9QtRGsBiCUoLKJMTctcY3YPVRzjWwjYDvnzG4i16pq1uFeY/9Q21O5moKsB6qnX+2ja8TeoSY+2Boi3tmNOjcFtxGvALXnGrkkNUNJPWY+OhGPI/YPlXpEfBM2/jZE6hYbZ2S5zzIseYlB6a97eJkcugZC70fjIaZ1zSg1FzncRuwa2gwAQLcoDhgEyP0R4+8BSN8XoPOa5QtAH7vqpBkoDRFVBbKNqO/cRrwEtN3pqg7DfubrXJ3yNdD1HOxpZHLoS6A4QG2gOUjSybYe3BJbPJtMDl0DjX96IJmRW/TXg684rPf9nk0mhz4zLuKIfNh5UabymuWLQBd3urbOqfJHAe+OPlwjdg99vNNV73iumWZzncuzT4cccsghhxxyqB1/AZ20pPQF+h0DAAAAAElFTkSuQmCC" alt="Alco Tracker reviewer access QR code">
-
-    <code>alcotracker://review?code=ALCO-GP-REVIEW-7K4M9Q2X6P8N</code>
-  </main>
+    <div class="code">
+      alcotracker://review?code=ALCO-GP-REVIEW-7K4M9Q2X6P8N
+    </div>
+  </div>
 </body>
 </html>
